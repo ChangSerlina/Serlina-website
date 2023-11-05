@@ -1,0 +1,232 @@
+/* 變數宣告 */
+:root {
+    --white: #ffffffff;
+    --black: #000000ff;
+    --gray:rgb(70, 66, 66);
+    --blue: #4169E1ff;
+    --lightblue:#E0FFFFff;
+    --pink:#FA00FFff;
+    --gold:#FFD700ff;
+}
+
+/* 先進行歸零設定 */
+body,
+h1,
+h2,
+ul,
+li,
+p,
+b,
+div,
+table,
+span {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+}
+ul, li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.active{
+    font-style: italic;
+    color: var(--pink);
+    border-bottom: 3px solid var(--pink);
+}
+
+a:link a:visited {
+    color: var(--black);
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* 全域設定 */
+* {
+    box-sizing: border-box;
+}
+
+/* 內容設定 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: var(--lightblue);
+    display: block;
+    text-align: center;
+}
+
+/* 版面結構設定 */
+#container {
+    width: 1240px;
+    margin: 0 auto;    /* 左右置中 */
+}
+
+/* 設定header */
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+    margin-bottom: 15px;
+    box-shadow: 0 12px 9px -7px;
+}
+#headcontent{
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 設定logo */
+.logo {
+    float: left;
+}
+
+/* 設定headcontainer */
+.headcontainer {
+    float: right;
+    display: flex;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+
+.search {
+    border: solid #000000 2px;
+    width: 330px;
+    height: 35px;
+    background: url(../images/Icon/Icon-glass.svg);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+.login a:hover {
+    font-style: italic;
+    color: var(--black);
+}
+
+.login button {
+    width: 120px;
+    height: 35px;
+    background: var(--blue);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    border: 0;
+    margin-left: 20px;
+}
+
+/* 設定主選單 */
+.nav {
+    width: 480px;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    padding: 5px 10px;
+}
+.nav li a {
+    float: left;
+}
+
+.nav a:hover {
+    color: var(--blue);
+    font-style: italic;
+}
+/* 設定banner */
+.banner{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+/* 設定內容content */
+.row {
+    width: 1220px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 600px;
+    height: 600px;
+    padding: 0 55 0 45;
+}
+.content img{
+    margin-bottom: 30px;
+}
+.text{
+    width: 500px;
+    margin: 0 auto;
+    text-align: start;
+}
+/* 設定下方照片區 */
+.pictures{
+    margin: 10px 5px;
+}
+
+/* 設定footer */
+#footer {
+    width: 100%;
+    clear: both;
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 20px 0;
+}
+#footer a{
+    color: white;
+}
+#footer .icon{
+    padding:10px;
+}
+
+#footercontent{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+#copy{
+    padding-bottom: 20px;
+}
+
+/* 設定go to top按鈕 */
+
+#Gotop{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: var(--gold);
+    float: right;
+    position: sticky;
+    right: 20px;
+    bottom: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+#Gotop span{
+    display: block;
+    font-size: 2em;
+}
+#Gotop a{
+    color: var(--gold);
+}

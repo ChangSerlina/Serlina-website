@@ -1,0 +1,127 @@
+:root {
+    --brown: #ccbaacff;
+    --white: #ffffff;
+    --green: #3cb371ff;
+    --silver:#708090ff;
+    --black: #000000ff;
+}
+/* 設定container_nav */
+.container_nav{
+    width: 1240px;
+    margin: 0 auto;
+    height: 35px;
+    overflow: hidden;
+}
+.nav_row{
+    width: 1220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--silver);
+}
+.container_nav p{
+    float: left;
+}
+.container_nav .sub_nav{
+    float: left;
+    margin-right: 0;
+}
+.container_nav li {
+    float: left;
+    padding: 5px 10px;
+}
+.container_nav a{
+    color: var(--silver);
+}
+.container_nav a:hover{
+    color: var(--black);
+}
+
+/* 設定container_2樣式 */
+#container_2 {
+    width: 1240px;
+    margin: 0 auto;
+    /* 左右置中 */
+}
+/* 設定content_2樣式 */
+.content_2 {
+    padding: 10px;
+    width: 1240px;
+    height: 320px;
+    overflow: hidden;
+}
+.content_2:nth-child(odd) {
+    background: var(--brown);
+}
+.content_2:nth-child(even) {
+    background: var(--white);
+}
+/* 設定左右的container樣式 */
+.column-66 {
+    float: left;
+    width: 66%;
+    height: 300px;
+}
+.column-66 p{
+    margin-top: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.column-33 {
+    float: right;
+    width: 33%;
+    height: 300px;
+}
+
+/* 設定row_2 */
+.row_2 {
+    position: relative;
+    width: 1220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 設定content_2裡面的按鈕 */
+.content_2:nth-child(odd) button{
+    background: var(--green);
+    border: 0;
+    padding: 10px 16px;
+    color: var(--white);
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.content_2:nth-child(even) button{
+    background: var(--brown);
+    border: 0;
+    padding: 10px 16px;
+    color: var(--white);
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+/* 設定內文 */
+h1 {
+    font-size: 35px;
+}
+
+b {
+    color: var(--green);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 自訂樣式 */
+.brown_p {
+    color: var(--brown);
+}
+
+.brown_bg {
+    background-color: var(--brown) !important;
+}
